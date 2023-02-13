@@ -1,3 +1,5 @@
+require 'pry-byebug'
+
 puts "Enter a phrase to be encypted:"
 user_input = gets.chomp
 
