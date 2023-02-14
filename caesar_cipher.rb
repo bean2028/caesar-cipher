@@ -17,6 +17,7 @@ def caesar_cipher(input_string, shift)
       num
     end
   end
+  encrypted_array = shift_array.map { |num| num.chr(Encoding::ASCII)}
   binding.pry
 end
 
