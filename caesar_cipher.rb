@@ -7,7 +7,7 @@ puts "Enter a shift value for the phrase:"
 user_shift = gets.chomp
 
 def caesar_cipher(input_string, shift)
-  array = input_string.split("")
+  array = input_string.split("").map { |char| char.ord }
   binding.pry
 end
 
