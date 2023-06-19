@@ -11,7 +11,7 @@ def caesar_cipher(input_string, shift)
   shift_array = array.map do |num|
     if (num <= 91 && num >= 66)
       (num + shift - 65) % 26 + 65
-    elsif (num <= 123 && num >= 98)
+    elsif (num <= 123 && num >= 97)
       (num + shift - 97) % 26 + 97
     else
       num
