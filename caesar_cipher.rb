@@ -9,7 +9,7 @@ user_shift = gets.chomp.to_i
 def caesar_cipher(input_string, shift)
   array = input_string.split("").map { |char| char.ord }
   shift_array = array.map do |num|
-    if (num <= 91 && num >= 66)
+    if (num <= 91 && num >= 65)
       (num + shift - 65) % 26 + 65
     elsif (num <= 123 && num >= 97)
       (num + shift - 97) % 26 + 97
